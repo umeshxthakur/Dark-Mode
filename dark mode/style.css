@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #eff8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    transition: .5s;
+}
+.bx{
+    font-size: 24px; /* logo size*/
+}
+.card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.1);
+    max-width: 100%;
+    width: 500x;
+    transition: .5s;
+
+}
+.card__header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+}
+.card__toggle{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: #eff8ff;
+    border-radius: 50%;
+    transition: .5s;
+    text-decoration: none;
+
+}
+.card__toggle .bx{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.bx-moon{
+    color: #3797c4;
+}
+.bxs-moon{
+   color:#fdfdfd ;
+   opacity: 0;
+   visibility: hidden;
+
+}
+.card__img{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin:  0 auto;
+    margin-bottom: 25px;
+}
+.card__img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+.card__name{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 18px;
+}
+.card__position{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 25px;
+    transition: .5s;
+}
+.card__socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.card__item{
+    padding: 0 10px;
+}
+.card__icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #3797c4;
+    transform: .5s;
+    text-decoration: none;
+
+}
+
+.card__icon:hover{
+    transform: translateY(-5px);
+}
+.is-dark{
+    background: #252c23;
+}
+.is-dark .card{
+    background: #313848;
+}
+.is-dark .card__toggle{
+    background: #313848;
+}
+.is-dark .bx-moon{
+   opacity: 1;
+   /*visibility: hidden;*/
+}
+.is-dark .bxs-moon{
+    opacity: 1;
+    visibility: hidden;
+ }
+.is-dark .card__position{
+    color: #fff;
+    
+ }    
+ .is-dark .card__name{
+    color: rgb(62, 90, 214);
+    
+ }   
+
+.is-dark .card__icon{
+    color: #fff;
+    background: #484952;
+ } 
+
+
